@@ -13,6 +13,10 @@
 - common : 공통 (framework, util)
 - ext : 외부 연동 개발 (provider)
 
+## ● CORS 
+1. 설정 : WebMvcConfig.java
+2. 임시 옵션 변경 : allowCredentials(false), allowedOrigins(*)
+
 ## ● swagger UI
 1. 설정 : SwaggerConfig.java
 2. URL : http://localhost:8080/swagger-ui/

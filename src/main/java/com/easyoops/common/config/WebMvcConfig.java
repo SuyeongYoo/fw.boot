@@ -19,16 +19,16 @@ public class WebMvcConfig implements WebMvcConfigurer {
     }
 
     // CORS
-//    @Override
-//    public void addCorsMappings(CorsRegistry registry) {
-//        registry.addMapping("/**")
-//                .allowedOrigins("*")
-//                .allowedMethods(RequestMethod.GET.name(),
-//                        RequestMethod.POST.name(),
-//                        RequestMethod.PUT.name(),
-//                        RequestMethod.DELETE.name(),
-//                        RequestMethod.OPTIONS.name())
-//                .allowedHeaders("*").maxAge(3600)
-//                .allowCredentials(true);
-//    }
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowedMethods(RequestMethod.GET.name(),
+                        RequestMethod.POST.name(),
+                        RequestMethod.PUT.name(),
+                        RequestMethod.DELETE.name(),
+                        RequestMethod.OPTIONS.name())
+                .allowedHeaders("*").maxAge(3600)
+                .allowCredentials(false);
+    }
 }
